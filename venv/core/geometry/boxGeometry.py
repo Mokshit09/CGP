@@ -26,6 +26,6 @@ class BoxGeometry(Geometry):
         colorData = [C1]*6 + [C2]*6 + [C3]*6 +[C4]*6 + [C5]*6 + [C6]*6
 
         self.addAttribute("vec3", "vertexPosition",positionData)
-        self.addAttribute("vec3", "vertexPosition",colorData)
+        self.addAttribute("vec3", "vertexColor",colorData)
         self.countVertices()
         

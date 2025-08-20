@@ -65,9 +65,9 @@ class Object3D:
                 worldTranform.item((2,3))]
     
     def setPosition(self, position):
-        self.transform.itemset((0,3), position[0])
-        self.transform.itemset((1,3), position[1])
-        self.transform.itemset((2,3), position[2])
+        self.transform[0, 3] = position[0]
+        self.transform[1, 3] = position[1]
+        self.transform[2, 3] = position[2]
 
     
 

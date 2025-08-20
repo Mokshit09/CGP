@@ -28,8 +28,7 @@ class OpenGLUtils(object):
     
     @staticmethod
     def  initializeProgram(vertexShaderCode, fragmentShaderCode):
-        vertexShaderRef = OpenGLUtils.initializeShader(
-        vertexShaderCode, GL_VERTEX_SHADER)
+        vertexShaderRef = OpenGLUtils.initializeShader(vertexShaderCode, GL_VERTEX_SHADER)
         fragmentShaderRef = OpenGLUtils.initializeShader(fragmentShaderCode, GL_FRAGMENT_SHADER)
         #  create empty program object and store reference to it
         programRef = glCreateProgram()

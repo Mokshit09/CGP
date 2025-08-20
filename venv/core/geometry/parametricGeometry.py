@@ -2,7 +2,8 @@ from .geometry import Geometry
 
 class ParametricGeometry(Geometry):
     def __init__(self, uStart, uEnd, uResolution, vStart, vEnd, vResolution, surfaceFunction):
-        
+        super().__init__()
+
         deltaU = (uEnd - uStart) / uResolution 
         deltaV = (vEnd - vStart) / vResolution 
         positions = []
